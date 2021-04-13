@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.6227">
+  <sounds />
+  <images>
+    <image name="platform">
+      <file name="platform.png" size="2832" />
+    </image>
+    <image name="RO_Robot_Sidescroller_walk_RoCrazy_0001">
+      <file name="RO_Robot_Sidescroller_walk_RoCrazy_0001.png" size="15545" />
+    </image>
+    <image name="RO_Robot_Sidescroller_walk_RoCrazy_0002">
+      <file name="RO_Robot_Sidescroller_walk_RoCrazy_0002.png" size="14078" />
+    </image>
+    <image name="RO_Robot_Sidescroller_walk_RoCrazy_0003">
+      <file name="RO_Robot_Sidescroller_walk_RoCrazy_0003.png" size="14522" />
+    </image>
+    <image name="RO_Robot_Sidescroller_walk_RoCrazy_0004">
+      <file name="RO_Robot_Sidescroller_walk_RoCrazy_0004.png" size="14420" />
+    </image>
+    <image name="RO_Robot_Sidescroller_walk_RoCrazy_0005">
+      <file name="RO_Robot_Sidescroller_walk_RoCrazy_0005.png" size="15291" />
+    </image>
+    <image name="RO_Robot_Sidescroller_walk_RoCrazy_0006">
+      <file name="RO_Robot_Sidescroller_walk_RoCrazy_0006.png" size="14331" />
+    </image>
+    <image name="gemWhite">
+      <file name="gemWhite.png" size="9243" />
+    </image>
+    <image name="backgroundStars">
+      <file name="backgroundStars.png" size="522358" />
+    </image>
+    <image name="Lava01">
+      <file name="Lava01.png" size="13038" />
+    </image>
+    <image name="Lava02">
+      <file name="Lava02.png" size="32925" />
+    </image>
+    <image name="Lava03">
+      <file name="Lava03.png" size="33408" />
+    </image>
+    <image name="Lava04">
+      <file name="Lava04.png" size="33395" />
+    </image>
+    <image name="Lava05">
+      <file name="Lava05.png" size="33435" />
+    </image>
+    <image name="Lava06">
+      <file name="Lava06.png" size="33517" />
+    </image>
+    <image name="Lava07">
+      <file name="Lava07.png" size="33472" />
+    </image>
+    <image name="Lava08">
+      <file name="Lava08.png" size="33466" />
+    </image>
+    <image name="Lava09">
+      <file name="Lava09.png" size="33445" />
+    </image>
+    <image name="Lava10">
+      <file name="Lava10.png" size="33511" />
+    </image>
+    <image name="lavaBubble">
+      <file name="lavaBubble.png" size="1250" />
+    </image>
+    <image name="spikes">
+      <file name="spikes.png" size="41915" />
+    </image>
+    <image name="flag">
+      <file name="flag.png" size="7563" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>

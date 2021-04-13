@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id806517" PGFVersion="0.25" GSCVersion="1.25.6227">
+  <attributes>
+    <text id="name">Player</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">128</real>
+      <real id="height">128</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">RO_Robot_Sidescroller_walk_RoCrazy_0001</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id521193" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Movement</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id723204" class="AnimateBehavior" enabled="true">
+          <attributes>
+            <text id="name">Animate</text>
+            <text id="bundleName">Animate.behavior</text>
+            <text id="images">RO_Robot_Sidescroller_walk_RoCrazy_0001	RO_Robot_Sidescroller_walk_RoCrazy_0002	RO_Robot_Sidescroller_walk_RoCrazy_0003	RO_Robot_Sidescroller_walk_RoCrazy_0004	RO_Robot_Sidescroller_walk_RoCrazy_0005	RO_Robot_Sidescroller_walk_RoCrazy_0006</text>
+            <index id="speed">10</index>
+            <boolean id="loop">true</boolean>
+            <boolean id="restoreActorImage">true</boolean>
+            <text id="currentFrameAttribute" />
+          </attributes>
+        </behavior>
+        <behavior id="id763083" class="AccelerateBehavior" enabled="true">
+          <attributes>
+            <text id="name">Run</text>
+            <text id="bundleName">Accelerate.behavior</text>
+            <angle id="direction">0</angle>
+            <index id="space">1</index>
+            <real id="acceleration">175</real>
+          </attributes>
+        </behavior>
+        <behavior id="id613414" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Jump</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id910240" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">space</text>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id452240" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="collision">
+                <attributes>
+                  <text id="prototypeKey">id938854</text>
+                  <text id="actorTag" />
+                  <real id="mode">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id865490" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Jump Height</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+                <text id="RHS">650</text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id206865" class="AccelerateBehavior" enabled="true">
+          <attributes>
+            <text id="name">Gravity</text>
+            <text id="bundleName">Accelerate.behavior</text>
+            <angle id="direction">270</angle>
+            <index id="space">1</index>
+            <real id="acceleration">1250</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id106936" class="ControlCameraBehavior" enabled="true">
+      <attributes>
+        <text id="name">Control Camera</text>
+        <text id="bundleName">ControlCamera.behavior</text>
+      </attributes>
+    </behavior>
+    <behavior id="id865608" class="CollideBehavior" enabled="true">
+      <attributes>
+        <text id="name">Platform_Collide</text>
+        <text id="bundleName">Collide.behavior</text>
+        <text id="prototypeKey">id938854</text>
+        <text id="actorTag">Ground</text>
+        <index id="mode">0</index>
+      </attributes>
+    </behavior>
+    <behavior id="id553543" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Death by Lava</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id702387" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id622104</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id944946" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Gem count to 0</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id803738</text>
+            <text id="RHS">0</text>
+          </attributes>
+        </behavior>
+        <behavior id="id897034" class="ResetSceneAction" enabled="true">
+          <attributes>
+            <text id="name">Reset Scene</text>
+            <text id="bundleName">ResetScene.behavior</text>
+            <index id="enableAdvertisement">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id848683" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Death by Spikes</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id892605" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id681176</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id598485" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Gem count to 0</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id803738</text>
+            <text id="RHS">0</text>
+          </attributes>
+        </behavior>
+        <behavior id="id466235" class="ResetSceneAction" enabled="true">
+          <attributes>
+            <text id="name">Reset Scene</text>
+            <text id="bundleName">ResetScene.behavior</text>
+            <index id="enableAdvertisement">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id121420" class="DisplayTextBehavior" enabled="true">
+      <attributes>
+        <text id="name">Display Text: "Gem Count: "</text>
+        <text id="bundleName">DisplayText.behavior</text>
+        <text id="text">Gem Count: </text>
+        <text id="font">Cambay</text>
+        <real id="size">30</real>
+        <index id="alignment">1</index>
+        <boolean id="wrap">false</boolean>
+        <color id="color">
+          <real id="red">1</real>
+          <real id="green">0</real>
+          <real id="blue">0</real>
+          <real id="alpha">1</real>
+        </color>
+        <real id="offsetx">0</real>
+        <real id="offsety">150</real>
+        <index id="space">0</index>
+        <index id="directionSpace">0</index>
+        <angle id="direction">0</angle>
+      </attributes>
+    </behavior>
+    <behavior id="id354841" class="DisplayTextBehavior" enabled="true">
+      <attributes>
+        <text id="name">Display Text: value</text>
+        <text id="bundleName">DisplayText.behavior</text>
+        <text id="text">
+          <expression>
+            <reference keypath="game.attributes.id803738" />
+          </expression>
+        </text>
+        <text id="font">Cambay</text>
+        <real id="size">30</real>
+        <index id="alignment">1</index>
+        <boolean id="wrap">false</boolean>
+        <color id="color">
+          <real id="red">1</real>
+          <real id="green">0</real>
+          <real id="blue">0</real>
+          <real id="alpha">1</real>
+        </color>
+        <real id="offsetx">100</real>
+        <real id="offsety">150</real>
+        <index id="space">0</index>
+        <index id="directionSpace">0</index>
+        <angle id="direction">0</angle>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">128</integer>
+        <integer id="tileHeight">128</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <point id="centerOfMass">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+        <boolean id="pin">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+        <boolean id="canSleep">true</boolean>
+        <boolean id="betterColisions">false</boolean>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

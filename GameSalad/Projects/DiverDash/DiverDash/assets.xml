@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.6227">
+  <sounds>
+    <sound name="underwater">
+      <file name="underwater.ogg" size="30657" />
+    </sound>
+  </sounds>
+  <images>
+    <image name="diver1">
+      <file name="diver1.png" size="24117" />
+    </image>
+    <image name="backgroundShallow_1024x768">
+      <file name="backgroundShallow_1024x768.png" size="616563" />
+    </image>
+    <image name="diver2">
+      <file name="diver2.png" size="24233" />
+    </image>
+    <image name="diver3">
+      <file name="diver3.png" size="24685" />
+    </image>
+    <image name="diver4">
+      <file name="diver4.png" size="24529" />
+    </image>
+    <image name="diver5">
+      <file name="diver5.png" size="23875" />
+    </image>
+    <image name="diver6">
+      <file name="diver6.png" size="24363" />
+    </image>
+    <image name="diver7">
+      <file name="diver7.png" size="24680" />
+    </image>
+    <image name="diver8">
+      <file name="diver8.png" size="24217" />
+    </image>
+    <image name="pearlSparkle1">
+      <file name="pearlSparkle1.png" size="13550" />
+    </image>
+    <image name="pearlSparkle2">
+      <file name="pearlSparkle2.png" size="13541" />
+    </image>
+    <image name="pearlSparkle3">
+      <file name="pearlSparkle3.png" size="13670" />
+    </image>
+    <image name="pearlSparkle4">
+      <file name="pearlSparkle4.png" size="13624" />
+    </image>
+    <image name="pearlSparkle5">
+      <file name="pearlSparkle5.png" size="13716" />
+    </image>
+    <image name="pearlSparkle6">
+      <file name="pearlSparkle6.png" size="13807" />
+    </image>
+    <image name="pearlSparkle7">
+      <file name="pearlSparkle7.png" size="13742" />
+    </image>
+    <image name="pearlSparkle8">
+      <file name="pearlSparkle8.png" size="13728" />
+    </image>
+    <image name="pearlSparkle9">
+      <file name="pearlSparkle9.png" size="13629" />
+    </image>
+    <image name="pearlSparkle10">
+      <file name="pearlSparkle10.png" size="13504" />
+    </image>
+    <image name="pearlSparkle11">
+      <file name="pearlSparkle11.png" size="13555" />
+    </image>
+    <image name="pearlSparkle12">
+      <file name="pearlSparkle12.png" size="13633" />
+    </image>
+    <image name="pearlSparkle13">
+      <file name="pearlSparkle13.png" size="13568" />
+    </image>
+    <image name="pearlSparkle14">
+      <file name="pearlSparkle14.png" size="13532" />
+    </image>
+    <image name="pearlSparkle15">
+      <file name="pearlSparkle15.png" size="13532" />
+    </image>
+    <image name="pearlDisappear1">
+      <file name="pearlDisappear1.png" size="14036" />
+    </image>
+    <image name="pearlDisappear2">
+      <file name="pearlDisappear2.png" size="13519" />
+    </image>
+    <image name="pearlDisappear3">
+      <file name="pearlDisappear3.png" size="12160" />
+    </image>
+    <image name="pearlDisappear4">
+      <file name="pearlDisappear4.png" size="13010" />
+    </image>
+    <image name="pearlDisappear5">
+      <file name="pearlDisappear5.png" size="13383" />
+    </image>
+    <image name="pearlDisappear6">
+      <file name="pearlDisappear6.png" size="13947" />
+    </image>
+    <image name="pearlDisappear7">
+      <file name="pearlDisappear7.png" size="14027" />
+    </image>
+    <image name="pearlDisappear8">
+      <file name="pearlDisappear8.png" size="4534" />
+    </image>
+    <image name="pearlDisappear9">
+      <file name="pearlDisappear9.png" size="1369" />
+    </image>
+    <image name="pearlDisappear10">
+      <file name="pearlDisappear10.png" size="1377" />
+    </image>
+    <image name="pearlDisappear11">
+      <file name="pearlDisappear11.png" size="1059" />
+    </image>
+    <image name="pearlDisappear12">
+      <file name="pearlDisappear12.png" size="816" />
+    </image>
+    <image name="pearlDisappear13">
+      <file name="pearlDisappear13.png" size="520" />
+    </image>
+    <image name="pearlDisappear14">
+      <file name="pearlDisappear14.png" size="263" />
+    </image>
+    <image name="submarine0001">
+      <file name="submarine0001.png" size="33573" />
+    </image>
+    <image name="submarine0002">
+      <file name="submarine0002.png" size="33682" />
+    </image>
+    <image name="submarine0003">
+      <file name="submarine0003.png" size="33933" />
+    </image>
+    <image name="submarine0004">
+      <file name="submarine0004.png" size="33850" />
+    </image>
+    <image name="submarine0005">
+      <file name="submarine0005.png" size="34132" />
+    </image>
+    <image name="submarine0006">
+      <file name="submarine0006.png" size="33408" />
+    </image>
+    <image name="submarine0007">
+      <file name="submarine0007.png" size="33279" />
+    </image>
+    <image name="submarine0008">
+      <file name="submarine0008.png" size="33472" />
+    </image>
+    <image name="anglerfish1">
+      <file name="anglerfish1.png" size="23007" />
+    </image>
+    <image name="anglerfish2">
+      <file name="anglerfish2.png" size="22909" />
+    </image>
+    <image name="anglerfish3">
+      <file name="anglerfish3.png" size="22798" />
+    </image>
+    <image name="anglerfish4">
+      <file name="anglerfish4.png" size="22367" />
+    </image>
+    <image name="anglerfish5">
+      <file name="anglerfish5.png" size="21907" />
+    </image>
+    <image name="anglerfish6">
+      <file name="anglerfish6.png" size="22257" />
+    </image>
+    <image name="anglerfish7">
+      <file name="anglerfish7.png" size="22260" />
+    </image>
+    <image name="anglerfish8">
+      <file name="anglerfish8.png" size="22396" />
+    </image>
+    <image name="anglerfish9">
+      <file name="anglerfish9.png" size="22262" />
+    </image>
+    <image name="anglerfish10">
+      <file name="anglerfish10.png" size="21572" />
+    </image>
+    <image name="anglerfish11">
+      <file name="anglerfish11.png" size="22222" />
+    </image>
+    <image name="anglerfish12">
+      <file name="anglerfish12.png" size="22528" />
+    </image>
+    <image name="anglerfish13">
+      <file name="anglerfish13.png" size="22961" />
+    </image>
+    <image name="anchor">
+      <file name="anchor.png" size="45719" />
+    </image>
+    <image name="coral1">
+      <file name="coral1.png" size="65104" />
+    </image>
+    <image name="coral2">
+      <file name="coral2.png" size="32881" />
+    </image>
+    <image name="coral3">
+      <file name="coral3.png" size="39485" />
+    </image>
+    <image name="coral4">
+      <file name="coral4.png" size="39112" />
+    </image>
+    <image name="coral5">
+      <file name="coral5.png" size="28751" />
+    </image>
+    <image name="platformOceanLong">
+      <file name="platformOceanLong.png" size="98153" />
+    </image>
+    <image name="platformOceanShort">
+      <file name="platformOceanShort.png" size="39565" />
+    </image>
+    <image name="rock">
+      <file name="rock.png" size="68152" />
+    </image>
+    <image name="seashell1">
+      <file name="seashell1.png" size="23878" />
+    </image>
+    <image name="seashell2">
+      <file name="seashell2.png" size="25723" />
+    </image>
+    <image name="seaweed1">
+      <file name="seaweed1.png" size="37024" />
+    </image>
+    <image name="seaweed2">
+      <file name="seaweed2.png" size="32678" />
+    </image>
+    <image name="skeleton">
+      <file name="skeleton.png" size="76363" />
+    </image>
+    <image name="sunkenShip">
+      <file name="sunkenShip.png" size="217580" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>
